@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar/navbar'
+import { Sidemenu } from './Components/Sidemenu/sidemenu';
+import { BrowserRouter as Router, Route, Routes,  } from 'react-router-dom';
+import { fecha_vencimiento } from './Pages/fecha_vencimiento';
+import { home } from './Pages/Home'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      <Navbar/>
+      <Sidemenu/>
+      <Routes>
+        <Route path="/fecha_vencimiento" element={<fecha_vencimiento/>}/>
+        <Route path="/" element={<home/>}/>
+      </Routes> 
+      </Router>
     </div>
   );
 }

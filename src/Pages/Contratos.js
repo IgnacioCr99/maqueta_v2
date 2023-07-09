@@ -1,24 +1,21 @@
 import { Container } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 
-function fecha_vencimiento() {
+function Contratos() {
   return (
     
     <Container fluid>
-      <Container>
-    <h1>Operaciones por fecha de vencimiento</h1>
+   <Container>
+    <h1>Contratos</h1>
     </Container>  
     <Table striped bordered hover>
       <thead>
         <tr>
-          <th>#</th>
-          <th>fecha de vencimiento</th>
-          <th>Fecha Operacion</th>
-          <th>inversionista</th>
-          <th>forma de pago al cliente</th>
-          <th>fecha de pago BPC a CTP</th>
-          <th>Nemotécnico</th>
-          <th>total</th>
+          <th>Rut</th>
+          <th>Dv</th>
+          <th>Cendente</th>
+          <th>Contrato</th>
+          <th>Ejecutivo</th>
         </tr>
       </thead>
       <tbody>
@@ -45,4 +42,4 @@ function fecha_vencimiento() {
   );
 }
 
-export default fecha_vencimiento;
+export default Contratos;

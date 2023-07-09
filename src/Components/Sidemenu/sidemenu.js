@@ -8,6 +8,7 @@ import GroupIcon from '@rsuite/icons/legacy/Group';
 import MagicIcon from '@rsuite/icons/legacy/Magic';
 import GearCircleIcon from '@rsuite/icons/legacy/GearCircle';
 import 'rsuite/dist/rsuite.min.css';
+import { Link,  } from 'react-router-dom';
 
 export const Sidemenu = () => {
     const [expanded, setExpanded] = React.useState(true);
@@ -15,29 +16,25 @@ export const Sidemenu = () => {
   return (
     <div style={{ width: 240 }}>
       
-      <hr />
+      
       <Sidenav appearance='default' expanded={expanded} defaultOpenKeys={['3', '4']}>
         <Sidenav.Body>
           <Nav activeKey={activeKey} onSelect={setActiveKey}>
-            <Nav.Menu placement="rightStart" eventKey="3" title="CORE" icon={<DashboardIcon />}>
-              <Nav.Item eventKey="3-1">Datos Comerciales</Nav.Item>
-              <Nav.Item eventKey="3-2">Devices</Nav.Item>
-              <Nav.Item eventKey="3-3">Loyalty</Nav.Item>
-              <Nav.Item eventKey="3-4">Visit Depth</Nav.Item>
+            <Nav.Menu placement="rightStart" eventKey="3" title="Control de Operaciones" icon={<DashboardIcon />}>
+              <Nav.Item eventKey="3-1" as={Link} to={'/'}>Home</Nav.Item>
+              <Nav.Item eventKey="3-1" as={Link} to={'/fecha_vencimiento'}>Fecha de vencimiento</Nav.Item>
+              <Nav.Item eventKey="3-1" as={Link} to={'/saldo_en_custodia'}>Saldo en custodia</Nav.Item>
+              <Nav.Item eventKey="3-1" as={Link} to={'/pago_vcto'}>pago_vcto</Nav.Item>
             </Nav.Menu>
             <Nav.Menu
               placement="rightStart"
               eventKey="4"
-              title="OPERACIÓN"
+              title="Documentos"
               icon={<GearCircleIcon />}
             >
-              <Nav.Item eventKey="4-1">Applications</Nav.Item>
-              <Nav.Item eventKey="4-2">Channels</Nav.Item>
-              <Nav.Item eventKey="4-3">Versions</Nav.Item>
-              <Nav.Menu eventKey="4-5" title="Custom Action">
-                <Nav.Item eventKey="4-5-1">Action Name</Nav.Item>
-                <Nav.Item eventKey="4-5-2">Action Params</Nav.Item>
-              </Nav.Menu>
+              <Nav.Item eventKey="4-1" as={Link} to={'/comprobantes'}>Comprobantes</Nav.Item>
+              <Nav.Item eventKey="4-2" as={Link} to={'/contratos'}>Contratos</Nav.Item>
+              
             </Nav.Menu>
           </Nav>
         </Sidenav.Body>

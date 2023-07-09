@@ -1,24 +1,22 @@
-import { Container } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 
-function fecha_vencimiento() {
+function Saldo_en_custodia() {
   return (
     
-    <Container fluid>
-      <Container>
-    <h1>Operaciones por fecha de vencimiento</h1>
-    </Container>  
     <Table striped bordered hover>
       <thead>
         <tr>
-          <th>#</th>
-          <th>fecha de vencimiento</th>
+          <th>Fecha vencimiento</th>
           <th>Fecha Operacion</th>
-          <th>inversionista</th>
-          <th>forma de pago al cliente</th>
+          <th>cliente</th>
+          <th>detalle</th>
           <th>fecha de pago BPC a CTP</th>
           <th>Nemotécnico</th>
-          <th>total</th>
+          <th>Monto</th>
+          <th>dias en mora</th>
+          <th>Cedente</th>
+          <th>Interes ganado</th>
+          <th>Observacion</th>  
         </tr>
       </thead>
       <tbody>
@@ -41,8 +39,7 @@ function fecha_vencimiento() {
         </tr>
       </tbody>
     </Table>
-    </Container>
   );
 }
 
-export default fecha_vencimiento;
+export default Saldo_en_custodia;

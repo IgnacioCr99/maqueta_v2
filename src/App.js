@@ -11,12 +11,20 @@ import Saldo_en_custodia from './Pages/Saldo_en_custodia';
 import pago_vcto from './Pages/pago_vcto';
 import FooterPage from './Components/Footer/Footer';
 import FlexboxGridItem from 'rsuite/esm/FlexboxGrid/FlexboxGridItem';
+import { Container, Content } from 'rsuite';
+import Breadcrumb from './Components/Breadcrum/Breadcrum';
 function App() {
   return (
     <div className="App">
-     
+     <Container>
       <Navbar/>
-      <Sidemenu/>
+      <Breadcrumb/>
+      </Container>
+      <Container>
+      <Sidemenu />
+
+      <Content>
+       
       <div>
         <Routes>
           <Route path="/" element={<Home/>}/>
@@ -27,9 +35,14 @@ function App() {
           <Route path="/pago_vcto" element={<pago_vcto/>}/>
         </Routes>
       </div>
+      </Content>
       
-     <FooterPage/> 
-
+      </Container>
+      <div class="fixed-bottom">
+      <FooterPage /> 
+      </div>
+     
+     
     </div>
   );
 }

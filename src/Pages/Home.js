@@ -1,6 +1,7 @@
 import React from "react";
 import {  Card, Col, Container, Row, Table } from "react-bootstrap";
-import { MDBBreadcrumb, MDBBreadcrumbItem } from 'mdb-react-ui-kit';
+
+import { Divider } from "rsuite";
 
 import { MDBDataTable } from 'mdbreact';
 
@@ -106,6 +107,39 @@ import { MDBDataTable } from 'mdbreact';
         salary: '$433,060',
         extn: 6224,
         email: 'c.kelly@datatables.net'
+      },
+      {
+        name: 'Cedric',
+        surname: 'Kelly',
+        position: 'Senior Javascript Developer',
+        office: 'Edinburgh',
+        age: '22',
+        date: '2012/03/29',
+        salary: '$433,060',
+        extn: 6224,
+        email: 'c.kelly@datatables.net'
+      },
+      {
+        name: 'Cedric',
+        surname: 'Kelly',
+        position: 'Senior Javascript Developer',
+        office: 'Edinburgh',
+        age: '22',
+        date: '2012/03/29',
+        salary: '$433,060',
+        extn: 6224,
+        email: 'c.kelly@datatables.net'
+      },
+      {
+        name: 'Cedric',
+        surname: 'Kelly',
+        position: 'Senior Javascript Developer',
+        office: 'Edinburgh',
+        age: '22',
+        date: '2012/03/29',
+        salary: '$433,060',
+        extn: 6224,
+        email: 'c.kelly@datatables.net'
       }
     ]
   };
@@ -123,17 +157,20 @@ export function Home() {
         
        <Row>
         <Col>
+
+    
+        <h1>Control de operaciones </h1>
+        
+      
+        <Divider />
        <Card>
-       <MDBBreadcrumb>
-        <MDBBreadcrumbItem>
-          <a href='#'>Home</a>
-        </MDBBreadcrumbItem>
-        <MDBBreadcrumbItem active>Control de Operaciones</MDBBreadcrumbItem>
-      </MDBBreadcrumb>
-    <h1>Control de operaciones </h1>
+       
+    
       
     <MDBDataTable
       scrollX
+      scrollY
+      
       striped
       bordered
       data={data}

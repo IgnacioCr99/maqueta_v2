@@ -25,18 +25,20 @@ function BasicExample() {
     <div>
     <Navbar bg='white' expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand as={Link} to={'/'}><img  alt=""
+        <Navbar.Brand as={Link} to={'/'} >
+              <img  alt=""  
               src={logo}
               width="200"
               height="100"
-              className="d-inline-block align-top"></img></Navbar.Brand>
+              className="d-inline-block align-top"
+              ></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
           </Nav>
         </Navbar.Collapse>
-        <Divider vertical />
-        <Dropdown title="AYUDA">
+        
+        <Dropdown size='lg' title="AYUDA">
     <Dropdown.Item>Documentacion</Dropdown.Item>
     <Dropdown.Item>Manuales de uso de la plataforma</Dropdown.Item>
     <Dropdown.Item>preguntas frecuentes</Dropdown.Item>
@@ -45,17 +47,17 @@ function BasicExample() {
   <Divider vertical />
   <ButtonToolbar>
     
-  <IconButton icon={<NoticeIcon />} />
+  <IconButton size='lg' icon={<NoticeIcon />} />
   
   </ButtonToolbar>
   <Divider vertical />
   <AvatarGroup>
-    <Badge>
     
-      <Dropdown renderToggle={renderAvatar} >
+      <Dropdown title={
+      <Badge> <Avatar circle size='sm' src="https://avatars.githubusercontent.com/u/12592949" alt="@superman66"></Avatar></Badge>} >
      <Dropdown.Item  panel style={{ padding: 10, width: 160 }}>
-      <p>Signed in as</p>
-      <strong>foobar</strong>
+      <p>Sesion iniciada como:</p>
+      <strong>Contempora  </strong>
     </Dropdown.Item>
     <Dropdown.Item divider />
     <Dropdown.Item>Your profile</Dropdown.Item>
@@ -66,7 +68,7 @@ function BasicExample() {
     <Dropdown.Item>Settings</Dropdown.Item>
     <Dropdown.Item>Sign out</Dropdown.Item>
   </Dropdown>
-    </Badge>
+    
    
 
 

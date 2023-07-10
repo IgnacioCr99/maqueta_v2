@@ -1,10 +1,7 @@
-import React from "react";
-import {  Card, Col, Container, Row, Table } from "react-bootstrap";
-import { MDBBreadcrumb, MDBBreadcrumbItem } from 'mdb-react-ui-kit';
-
-import { MDBDataTable } from 'mdbreact';
+import React from 'react';
 
 
+const Data = () => {
   const data = {
     columns: [
       {
@@ -109,45 +106,6 @@ import { MDBDataTable } from 'mdbreact';
       }
     ]
   };
-
-
-
-export function Home() {
- 
- 
- 
-  return (
-    
-    <div className="home">
-       <Container fluid>
-        
-       <Row>
-        <Col>
-       <Card>
-       <MDBBreadcrumb>
-        <MDBBreadcrumbItem>
-          <a href='#'>Home</a>
-        </MDBBreadcrumbItem>
-        <MDBBreadcrumbItem active>Control de Operaciones</MDBBreadcrumbItem>
-      </MDBBreadcrumb>
-    <h1>Control de operaciones </h1>
-      
-    <MDBDataTable
-      scrollX
-      striped
-      bordered
-      data={data}
-    />
-    
-
-    </Card>
-    </Col>
-    <Col> 
-    
-    </Col>
-    </Row>
-    
-    </Container>
-    </div>
-  );
 }
+
+export default Data;

@@ -9,6 +9,8 @@ import Comprobantes from './Pages/Comprobantes';
 import Contratos from './Pages/Contratos';
 import Saldo_en_custodia from './Pages/Saldo_en_custodia';
 import pago_vcto from './Pages/pago_vcto';
+import FooterPage from './Components/Footer/Footer';
+import FlexboxGridItem from 'rsuite/esm/FlexboxGrid/FlexboxGridItem';
 function App() {
   return (
     <div className="App">
@@ -25,6 +27,8 @@ function App() {
           <Route path="/pago_vcto" element={<pago_vcto/>}/>
         </Routes>
       </div>
+      
+     <FooterPage/> 
 
     </div>
   );

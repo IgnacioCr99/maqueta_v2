@@ -17,7 +17,7 @@ export const Sidemenu = () => {
     <div style={{ width: 240 }}>
       
       
-      <Sidenav appearance='default' expanded={expanded} defaultOpenKeys={['3', '4']}>
+      <Sidenav  appearance='default' expanded={expanded} defaultOpenKeys={['3', '4']}>
         <Sidenav.Body>
           <Nav activeKey={activeKey} onSelect={setActiveKey}>
             <Nav.Menu placement="rightStart" eventKey="3" title="Control de Operaciones" icon={<DashboardIcon />}>

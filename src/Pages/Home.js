@@ -163,7 +163,7 @@ export function Home() {
         
       
         <Divider />
-       <Card>
+       <Card fluid>
        
     
       

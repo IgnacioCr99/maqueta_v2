@@ -26,8 +26,8 @@ export const Sidemenu = () => {
   return (
     <Content>
       
-      <Sidebar  style={{ display: 'flex', flexDirection: 'column' }}
-          width={expanded ? 260 : 56}
+      <Sidebar  style={{ display: 'flex', flexDirection: 'column', padding: 'start'  }}
+          width={expanded ? 260 : 100}
           collapsible>
       <Sidenav  appearance='default' expanded={expanded} defaultOpenKeys={['3', '4']}>
         <Sidenav.Body>

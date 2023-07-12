@@ -4,6 +4,7 @@ import {  Card, Col, Container, Row, Table } from "react-bootstrap";
 import { Divider } from "rsuite";
 
 import { MDBDataTable } from 'mdbreact';
+import {} from '../App.css'
 
 
   const data = {
@@ -153,31 +154,23 @@ export function Home() {
   return (
     
     <div className="home">
-       <Container fluid>
+       <Container fluid >
         
-       <Row>
-        <Col>
-
-    
-        <h1>Control de operaciones </h1>
-        
-      
+       <Row xs={12}>
+        <Col >
+        <h1> Control de operaciones </h1>
         <Divider />
-       <Card fluid>
-       
-    
-      
-    <MDBDataTable
+       <MDBDataTable
+       responsive
       scrollX
-      scrollY
-      
+      scrollY 
       striped
       bordered
       data={data}
     />
     
 
-    </Card>
+      
     </Col>
     <Col> 
     

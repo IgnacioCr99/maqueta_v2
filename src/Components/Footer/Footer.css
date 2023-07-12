@@ -1,0 +1,24 @@
+.footer {
+    background-color: #faf8f8;
+    color: #5f6368;
+    font-size: 14px;
+    padding: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .footer {
+      padding: 48px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .footer {
+      padding: 72px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .footer {
+      padding: 96px;
+    }
+  }

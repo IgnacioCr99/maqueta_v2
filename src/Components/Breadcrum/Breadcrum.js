@@ -1,7 +1,7 @@
 import { MDBBreadcrumb, MDBBreadcrumbItem } from "mdb-react-ui-kit";
 
 const Breadcrumb = () => (
-    <MDBBreadcrumb>
+    <MDBBreadcrumb style={{marginBottom: 0}} >
     <MDBBreadcrumbItem>
       <a href='#'>Home</a>
     </MDBBreadcrumbItem>

@@ -153,21 +153,25 @@ export function Home() {
  
   return (
     
-    <div className="home">
+    <div className="table">
        <Container fluid >
         
-       <Row xs={12}>
+       <Row >
         <Col >
-        <h1> Control de operaciones </h1>
+        <h1 > Control de operaciones </h1>
         <Divider />
+        <div className="table-responsive">
        <MDBDataTable
-       responsive
+       autoWidth
+      responsive
       scrollX
       scrollY 
       striped
       bordered
       data={data}
     />
+
+</div>
     
 
       

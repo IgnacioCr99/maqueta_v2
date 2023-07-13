@@ -38,7 +38,7 @@ function BasicExample() {
           </Nav>
         </Navbar.Collapse>
         
-        <Dropdown size='lg' title="AYUDA">
+    <Dropdown size='lg' title="AYUDA">
     <Dropdown.Item>Documentacion</Dropdown.Item>
     <Dropdown.Item>Manuales de uso de la plataforma</Dropdown.Item>
     <Dropdown.Item>preguntas frecuentes</Dropdown.Item>
@@ -46,8 +46,10 @@ function BasicExample() {
   </Dropdown>
   <Divider vertical />
   <ButtonToolbar>
-    
-  <IconButton size='lg' icon={<NoticeIcon />} />
+  <Dropdown title={<IconButton size='sm' icon={<NoticeIcon />} />}>
+    <Dropdown.Item>No tienes notificaciones nuevas.</Dropdown.Item>
+  </Dropdown>    
+  
   
   </ButtonToolbar>
   <Divider vertical />
@@ -55,18 +57,17 @@ function BasicExample() {
     
       <Dropdown title={
       <Badge> <Avatar circle size='sm' src="https://avatars.githubusercontent.com/u/12592949" alt="@superman66"></Avatar></Badge>} >
-     <Dropdown.Item  panel style={{ padding: 10, width: 160 }}>
+     <Dropdown.Item size='sm'  panel style={{ padding: 10, width: 160 }}>
       <p>Sesion iniciada como:</p>
-      <strong>Contempora  </strong>
+      <strong>Contempora</strong>
     </Dropdown.Item>
     <Dropdown.Item divider />
-    <Dropdown.Item>Your profile</Dropdown.Item>
-    <Dropdown.Item>Your stars</Dropdown.Item>
-    <Dropdown.Item>Your Gists</Dropdown.Item>
+    <Dropdown.Item>Tu Perfil</Dropdown.Item>
+    <Dropdown.Item>Ajustes</Dropdown.Item>
+    <Dropdown.Item>Seguridad</Dropdown.Item>
     <Dropdown.Item divider />
-    <Dropdown.Item>Help</Dropdown.Item>
-    <Dropdown.Item>Settings</Dropdown.Item>
-    <Dropdown.Item>Sign out</Dropdown.Item>
+    <Dropdown.Item>Ayuda</Dropdown.Item>
+    <Dropdown.Item>Cerrar Sesion</Dropdown.Item>
   </Dropdown>
     
    

@@ -24,9 +24,9 @@ export const Sidemenu = () => {
     const [expanded, setExpanded] = React.useState(true);
   const [activeKey, setActiveKey] = React.useState('1');
   return (
-    <Content>
+    <Content style={{height: '100vh'}}>
       
-      <Sidebar  style={{ display: 'flex', flexDirection: 'column', padding: 'start'  }}
+      <Sidebar  style={{ display: 'flex', flexDirection: 'column', padding: 'start', height: '100vh'  }}
           width={expanded ? 260 : 100}
           collapsible>
       <Sidenav  appearance='default' expanded={expanded} defaultOpenKeys={['3', '4']}>
